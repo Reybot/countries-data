@@ -1,0 +1,23 @@
+.flags-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.flag-card {
+  background-color: hsl(209, 23%, 22%);
+  list-style: none;
+}
+
+.flag-img-container {
+  height: 180px;
+}
+
+.flag-img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.flag-content {
+  padding: 25px;
+}
