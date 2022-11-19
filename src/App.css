@@ -2,11 +2,19 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  padding: 30px;
 }
 
 .flag-card {
   background-color: hsl(209, 23%, 22%);
   list-style: none;
+  transition: transform 300ms;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flag-card:hover {
+  /* transform: rotate(180deg); */
 }
 
 .flag-img-container {
@@ -16,8 +24,49 @@
 .flag-img-container img {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .flag-content {
   padding: 25px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.flag-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flag-page button {
+  background-color: hsl(209, 23%, 22%);
+  border: none;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.flag-page button:hover {
+  animation: disco 200ms infinite;
+}
+
+@keyframes disco {
+  0% {
+    box-shadow: 0px 0px 50px lime;
+  }
+  33% {
+    box-shadow: 0px 0px 50px blue;
+  }
+  66% {
+    box-shadow: 0px 0px 50px red;
+  }
+  100% {
+    box-shadow: 0px 0px 50px lime;
+  }
 }
